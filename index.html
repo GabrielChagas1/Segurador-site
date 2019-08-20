@@ -20,25 +20,25 @@
             
             <div class="my-5 row">
                 <div class="col-md-3 border-icons">
-                    <div class="col-md-12">
+                    <div class="col-md-12 anima">
                         <i class="fas fa-car"></i>
                         <p>Seguro Carro</p>
                     </div>  
                 </div>
                 <div class="col-md-3 border-icons">
-                    <div class="col-md-12">
+                    <div class="col-md-12 anima">
                         <i class="fas fa-motorcycle"></i>
                         <p>Seguro Moto</p>
                     </div>
                 </div>
                 <div class="col-md-3 border-icons">
-                    <div class="col-md-12">
+                    <div class="col-md-12 anima">
                         <i class="fas fa-truck"></i>
                         <p>Seguro Caminhão</p>
                     </div>
                 </div>
                 <div class="col-md-3 border-icons">
-                    <div class="col-md-12">
+                    <div class="col-md-12 anima">
                         <i class="fas fa-home"></i>
                         <p>Seguro Residencial</p>
                     </div>
@@ -46,37 +46,111 @@
             </div>
            <div class="row">
                 <div class="col-md-3 border-icons">
-                    <div class="col-md-12">
+                    <div class="col-md-12 anima">
                         <i class="fas fa-building"></i>
                         <p>Seguro Empresa</p>
                     </div>
                 </div>
                 <div class="col-md-3 border-icons">
-                    <div class="col-md-12">
+                    <div class="col-md-12 anima">
                         <i class="fas fa-city"></i>
                         <p>Seguro Condomínio</p>
                     </div>
                 </div>
                 <div class="col-md-3 border-icons">
-                    <div class="col-md-12">
+                    <div class="col-md-12 anima">
                         <i class="fas fa-hand-holding-heart"></i>
                         <p>Seguro Vida</p>
                     </div>
                 </div>
                 <div class="col-md-3 border-icons">
-                    <div class="col-md-12">
+                    <div class="col-md-12 anima">
                         <i class="fas fa-umbrella"></i>
                         <p>Seguro Diversos</p>
                     </div>
                 </div>
            </div>
         </div>
-        
     </div>
+    <div class="modal fade" id="form-contato" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Preencha o formulario para realizar sua simulação</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <form action="" method="POST">
+                        <div class="md-form mb-5">
+                            <label data-error="wrong" data-success="right" for="orangeForm-name">Nome</label>
+                            <input type="text" id="orangeForm-name" class="form-control validate" name="nome">
+                            </div>
+                            <div class="md-form mb-5">
+                                <label data-error="wrong" data-success="right" for="orangeForm-email">E-mail</label>
+                            <input type="email" id="orangeForm-email" class="form-control validate" name="email">
+                            </div>
+            
+                            <div class="md-form mb-4">
+                            <label data-error="wrong" data-success="right" for="orangeForm-pass">Telefone</label>
+                            <input type="text" id="orangeForm-pass" class="form-control validate" name="telefone">
+                            </div>
+                            <div class="md-form mb-4">
+                                <label data-error="wrong" data-success="right" for="orangeForm-pass">Selecione qul seguro deseja cotação</label>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="inputGroupSelect02" name="seguro">
+                                        <option selected disabled>Escolher...</option>
+                                        <option value="Seguro Auto">Seguro Auto</option>
+                                        <option value="Seguro Vida">Seguro Vida</option>
+                                        <option value="Seguro Dental">Seguro Dental</option>
+                                        <option value="Seguro Residencial">Seguro Residencial</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="md-form mb-4">
+                                <label data-error="wrong" data-success="right" for="orangeForm-pass">Qual horário devemos entrar em contato?</label>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="inputGroupSelect02" name="horario">
+                                        <option selected disabled>Escolher...</option>
+                                        <option value="09:00">09:00</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="18:00">18:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="md-form mb-4">
+                                <label data-error="wrong" data-success="right" for="orangeForm-pass">Escreva uma mensagem!</label>
+                                <textarea class="form-control" name="mensagem" id="message" rows="10" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-primary btn-block">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<div class="text-center">
+  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Launch
+    Modal Register Form</a>
+</div>
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

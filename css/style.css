@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+/* dando os espaçamento */
+
+.col-md-3{
+    flex: 0 0 23% !important;
+    max-width: 24% !important;
+    margin: 0 10px;
+}
+
 .chamada{
     color: #fff;
     font-family: 'Dosis', sans-serif;
@@ -25,6 +33,7 @@
     min-width: 100px;
     min-height: 90px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .menor{
@@ -38,11 +47,19 @@
 }
 
 .border-icons i{
-   
     font-size: 50px;
     color: #fff!important;
     margin-bottom: 10px;
     min-width: 40px;
+}
+
+.border-icons:hover{
+    background-color: hsla(0,0%,56%,.6);
+}
+
+.anima:hover{
+    transform: translateY(-10px);
+    transition: all .2s;
 }
 
 .border-icons p{
@@ -53,3 +70,4 @@
     align-items: center;
     justify-content: center;
 }
+
