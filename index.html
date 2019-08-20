@@ -86,22 +86,21 @@
                     <form action="phpmailer/phpmailer/enviar_email2.php" method="POST">
                         <div class="md-form mb-5">
                             <label data-error="wrong" data-success="right" for="orangeForm-name">Nome</label>
-                            <input type="text" id="orangeForm-name" class="form-control validate" name="nome">
+                            <input type="text" id="orangeForm-name" class="form-control validate" name="nome" required>
                             </div>
                             <div class="md-form mb-5">
                                 <label data-error="wrong" data-success="right" for="orangeForm-email">E-mail</label>
-                            <input type="email" id="orangeForm-email" class="form-control validate" name="email">
+                            <input type="email" id="orangeForm-email" class="form-control validate" name="email" required>
                             </div>
             
                             <div class="md-form mb-4">
                             <label data-error="wrong" data-success="right" for="orangeForm-pass">Telefone</label>
-                            <input type="text" id="orangeForm-pass" class="form-control validate" name="telefone">
+                            <input type="text" id="orangeForm-pass" class="form-control validate" name="telefone" required>
                             </div>
                             <div class="md-form mb-4">
                                 <label data-error="wrong" data-success="right" for="orangeForm-pass">Selecione qul seguro deseja cotação</label>
                                 <div class="input-group mb-3">
-                                    <select class="custom-select" id="inputGroupSelect02" name="seguro">
-                                        <option selected disabled>Escolher...</option>
+                                    <select class="custom-select" id="inputGroupSelect02" name="seguro" required>
                                         <option value="Seguro Auto">Seguro Auto</option>
                                         <option value="Seguro Vida">Seguro Vida</option>
                                         <option value="Seguro Dental">Seguro Dental</option>
@@ -112,8 +111,7 @@
                             <div class="md-form mb-4">
                                 <label data-error="wrong" data-success="right" for="orangeForm-pass">Qual horário devemos entrar em contato?</label>
                                 <div class="input-group mb-3">
-                                    <select class="custom-select" id="inputGroupSelect02" name="horario">
-                                        <option selected disabled>Escolher...</option>
+                                    <select class="custom-select" id="inputGroupSelect02" name="horario" required>
                                         <option value="09:00">09:00</option>
                                         <option value="10:00">10:00</option>
                                         <option value="11:00">11:00</option>
